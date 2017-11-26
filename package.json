@@ -1,0 +1,7 @@
+{
+  "name": "fcalendar2_ajax",
+  "private": true,
+  "dependencies": {
+    "fullcalendar": "^3.7.0"
+  }
+}
