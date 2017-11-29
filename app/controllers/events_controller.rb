@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
 
-  before_action :set_event, only: [:show, :update]
+  before_action :set_event, only: [:show, :update, :edit]
 
   def index
   	@events = Event.all
@@ -9,14 +9,20 @@ class EventsController < ApplicationController
   def show
   end
 
+  def edit
+  end
+
   def update
     respond_to do |format|
       if @event.update(event_params)
+        flash.now[:alert] = "Event #{@event.title} was successfully updated."
         format.html { redirect_to @event, notice: 'Event was successfully updated.' }
         format.json { render :show, status: :ok, location: @event }
+        format.js
       else
         format.html { render :edit }
         format.json { render json: @event.errors, status: :unprocessable_entity }
+        format.js
       end
     end
   end

@@ -2,6 +2,7 @@
   "name": "fcalendar2_ajax",
   "private": true,
   "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
     "fullcalendar": "^3.7.0"
   }
 }

@@ -10,10 +10,12 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 
-//= require jquery/dist/jquery 
-//= require rails-ujs
-//= require turbolinks
+//= require jquery/dist/jquery
+//= require tether/dist/js/tether
+//= require bootstrap/dist/js/bootstrap
 //= require moment/min/moment.min
 //= require fullcalendar/dist/fullcalendar.js
-//= require_tree .
 
+//= require rails-ujs
+//= require turbolinks
+//= require_tree .
